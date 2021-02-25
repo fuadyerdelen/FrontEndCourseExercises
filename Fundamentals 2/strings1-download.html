@@ -19,24 +19,28 @@
   <body>
 
     <section class="preview">
-
+      <h2>js</h2>
 
 
     </section>
 
+    <script>
+      // Add your code here
+  
+      let quoteStart = "Don't judge each day by the harvest you reap ";
+      let quoteEnd = "but by the seeds that you plant.";
+      let finalQuote = quoteStart.concat(" ",quoteEnd );
+      
+      // Don't edit the code below here!
+  
+      const section = document.querySelector('section');
+      let para1 = document.createElement('p');
+      para1.textContent = finalQuote;
+  
+      section.appendChild(para1);
+    </script>
+
   </body>
-  <script>
-    // Add your code here
-
-    let quoteStart = 'Don't judge each day by the harvest you reap ';
-
-    // Don't edit the code below here!
-
-    const section = document.querySelector('section');
-    let para1 = document.createElement('p');
-    para1.textContent = finalQuote;
-
-    section.appendChild(para1);
-  </script>
+  
 
 </html>

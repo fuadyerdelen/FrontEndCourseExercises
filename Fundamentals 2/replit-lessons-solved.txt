@@ -1,0 +1,53 @@
+            
+            direction-follow
+    
+    const birthYear = 1948;
+    const thisYear = 1965;
+    const firstName = "Carlos";
+    const lastName = "Stevenson";
+    const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
+    console.log(greeting);
+
+        
+        lets do some math
+    
+    const a = 1+8;
+    const b = 22*3;
+    const c = 5%4;                  
+    const d = a-17;
+    const e = a+b+c+d;
+    module.exports = {a, b, c, d, e}
+
+
+        enter a number
+
+    number = Number(prompt("enter a number"));
+    function numberChecker() {
+        if(number === 6) {
+        return false;
+        } else if (number === 2){
+        return false;
+        }else if(number === 12){
+        return true;
+        }else if(number === 10){
+        return true;
+        }else if(number === 9){
+        return false;
+        }
+    }
+
+
+
+            troubleshooting
+
+    function troubleshooting() {
+        const a = 1;
+        const b = 1;
+
+        // Edit between these lines
+        // =================================
+        
+        return a + b;
+
+        // =================================
+    }   
