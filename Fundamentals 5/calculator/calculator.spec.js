@@ -66,7 +66,7 @@ describe('factorial', function() {
 	xit('computes the factorial of 2', function() {
 		expect(calculator.factorial(2)).toEqual(2);
 	});
-
+	
 	xit('computes the factorial of 5', function() {
 		expect(calculator.factorial(5)).toEqual(120);
 	});
