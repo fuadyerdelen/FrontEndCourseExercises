@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>to-do</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="user_page" class="card text-center d-none">
+
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item me-5">
+                    <p id="user_name"></p>
+                </li>
+                <li class="nav-item ms-5">
+                    <p id="user_email"></p>
+                </li>
+                <li class="nav-item ms-5">
+                    <button id="out_btn" class="btn btn-danger">Log Out</button>
+                </li>
+            </ul>
+        </div>
+
+        <div id="user_section" class="card-body">
+
+            <h5 class="card-title">Let's organize something</h5>
+            <p class="card-text">If there is a to-do list you want to add, click the Add to do button.</p>
+            <a href="#" class="btn btn-primary">Checked</a>
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Add To Do
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add To Do</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Title</label>
+                                    <input type="text" class="form-control" id="do_title">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Details:</label>
+                                    <textarea class="form-control" id="do_details"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="do_date" class="col-form-label">Select Date</label>
+                                    <input type="date" class="form-control" id="do_date">
+                                </div>
+                                <div class="mb-3 d-flex align-items-center">
+                                    <h6>Pick Color</h6>
+
+                                    <button type="button" onclick="get_color(primary)"
+                                        class="p-3 m-3 btn btn-primary"></button>
+                                    <button type="button" onclick="color(secondary)"
+                                        class="p-3 m-3 btn btn-secondary"></button>
+                                    <button type="button" onclick="get_color(success)"
+                                        class="p-3 m-3 btn btn-success"></button>
+                                    <button type="button" onclick="get_color(danger)"
+                                        class="p-3 m-3 btn btn-danger"></button>
+                                    <button type="button" onclick="get_color(warning)"
+                                        class="p-3 m-3 btn btn-warning"></button>
+                                    <button type="button" onclick="get_color(info)"
+                                        class="p-3 m-3 btn btn-info"></button>
+
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" id="add_btn" class="btn btn-primary">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main"></div>
+    <div id="content"></div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
