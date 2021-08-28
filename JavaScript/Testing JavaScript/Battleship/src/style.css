@@ -1,0 +1,112 @@
+:root {
+	--sea-blue: #006994;
+}
+
+
+body {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--sea-blue);
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.pointer-events-none {
+	pointer-events: none;
+}
+
+.display-none {
+	display: none;
+}
+
+.app {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.gameboards {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+:root {
+	--emerald: #2ecc71;
+	--alizarin: #e74c3c;
+	--wet-asphalt: #34495e;
+	--cell-size: 4rem;
+}
+
+.cell {
+	position: relative;
+	width: var(--cell-size);
+	height: var(--cell-size);
+	background-color: #fff;
+}
+
+
+.cell-missed:after,
+.part-hit:after,
+.ship-sunk>*:after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+
+	font-size: var(--cell-size);
+	line-height: var(--cell-size);
+	text-align: center;
+}
+
+.gameboard {
+	display: grid;
+	grid-template-rows: repeat(10, max-content);
+	grid-template-columns: repeat(10, max-content);
+	gap: 1px;
+}
+
+.disabled-gameboard {
+	pointer-events: none;
+	opacity: 0.4;
+}
+
+
+.ship {
+	position: absolute;
+	z-index: 99;
+	display: grid;
+	gap: 1px;
+}
+
+[data-own-ship='true'] {
+	cursor: pointer;
+}
+
+.ship-horizontal {
+	grid-auto-flow: column;
+}
+
+.ship-sunk>.part {
+	background-color: var(--wet-asphalt);
+}
+
+.part {
+	position: relative;
+	width: var(--cell-size);
+	height: var(--cell-size);
+}
+
+.part-functional {
+	background-color: var(--emerald);
+}
+
+.part-hit {
+	background-color: var(--alizarin);
+}
