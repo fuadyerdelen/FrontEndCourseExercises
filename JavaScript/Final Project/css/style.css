@@ -1,0 +1,253 @@
+.icon {
+    width: 30px;
+    height: 2rem;
+    color: rgb(29, 155, 240);
+    fill: currentColor;
+}
+.icon-login {
+    width: 40px;
+    height: 40px;
+    color: rgb(29, 155, 240);
+    fill: currentColor;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    width: 23.5%;
+    height: 40rem;
+
+}
+img{
+    width: 20% !important;
+}
+.photo-div{
+    width: 10%;
+}
+nav svg {
+    fill: black;
+    height: 1.75rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.p-2 {
+    padding: 9px !important;
+}
+
+#tweet_btn {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    padding: 10px;
+    width: 212px;
+    height: 45px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 9999px;
+}
+
+#tweet_btn:hover {
+    background-color: rgb(57, 145, 204);
+    transition-duration: .2s;
+}
+
+.modal-content {
+    border-radius: 16px !important;
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+#name {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+#name_et {
+    color: rgb(83, 100, 113);
+    font-size: 14px;
+}
+
+.profile {
+    height: 60px;
+}
+
+main {
+    width: 77.5%;
+}
+
+.home h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.home svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.home {
+    border: 1px rgb(239, 243, 244) solid;
+}
+
+.home-header {
+    border: 1px rgb(239, 243, 244) solid;
+    height: 48px;
+    top: 0;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+}
+
+
+
+
+
+.modal-header {
+    height: 47px;
+}
+
+.modal-footer {
+    width: 86%;
+    margin-left: 70px;
+    padding: 10px 0 10px 0;
+}
+
+.modal-footer svg {
+    fill: rgb(29, 155, 240);
+    margin-left: 12px;
+}
+
+.tweet {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    margin: 0;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 9999px;
+    padding: 4px 14px 0 14px;
+}
+
+.modal textarea {
+    border: none !important;
+    resize: none;
+    overflow: hidden;
+    width: 520px !important;
+    height: 100px !important;
+    padding: 0;
+}
+.tweet-it{
+    width: fit-content !important;
+}
+.tweet-it textarea {
+    border: none !important;
+    resize: none;
+    overflow: hidden;
+    width:  100% !important;
+    height: auto !important;
+    padding-left: 20px;
+}
+
+.reply {
+    color: rgb(29, 155, 240);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+
+
+.card-tweet {
+    padding: 10px;
+    border-top: 1px rgb(239, 243, 244) solid;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    }
+
+.card-tweet img {
+    width: 15%;
+}
+#tweet_text{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.name span {
+    font-size: 13px !important;
+    font-weight: 600;
+    color: rgb(83, 100, 113);
+}
+
+
+
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+
+
+
+
+@media (min-width: 576px) {
+    .home{
+        width: 100% !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .home{
+        width: 100% !important;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .home{
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home{
+        width: 60% !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .home{
+        width: 60% !important;
+    }
+}
+
+
